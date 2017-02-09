@@ -1,7 +1,7 @@
 <?php
 /**
 *   Plugin Name: NASA APOD
-*   Plugin URI: https://github.com/DaWoody/nasa-daily-image
+*   Plugin URI: https://github.com/DaWoody/nasa-apod
 *   Description: NASA APOD. A plugin that fetches information from the NASA open API, gathering information with the Astronomy Picture Of the Day (APOD). This information can then be added as a html block to a wordpress page/post etc.
 *   Version: 1.0.0
 *   Author: Johan "DaWoody" Wedfelt

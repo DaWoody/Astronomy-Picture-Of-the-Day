@@ -1,6 +1,6 @@
 /**
  * NASA APOD - plugin
- * Plugin URI: https://github.com/DaWoody/nasa-daily-image
+ * Plugin URI: https://github.com/DaWoody/nasa-apod
  * Author: Johan DaWoody Wedfelt
  * Author URI: https://github.com/DaWoody
  */
