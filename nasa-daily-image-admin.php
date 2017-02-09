@@ -1,7 +1,7 @@
 <?php
 /**
-*   This is part of the Nasa Daily Image plugin, should be included/required in the nasa-daily-image main file nasa-daily-image.php
-*   this part is methods for creating the admin menu and such.
+*  Part of the NASA Daily Image plugin.
+*  This part is creating the admin interface, both menu item and the actual admin page
 */
 
 function nasa_daily_image_create_plugin_menu() {

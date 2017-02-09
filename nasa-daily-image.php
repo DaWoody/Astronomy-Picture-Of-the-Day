@@ -6,7 +6,7 @@
 *   Version: 1.0.0
 *   Author: Johan "DaWoody" Wedfelt
 *   Copyright: Johan Wedfelt
-*   License: GPL
+*   License: GPLv3
 *   Author URI: https://github.com/DaWoody
 */
 

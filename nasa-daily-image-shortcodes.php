@@ -1,4 +1,8 @@
 <?php
+/**
+*   This part includes the methods and functions that generate the short-codes used in the plugin.
+*   This is a part of the NASA Daily Image plugin.
+*/
 
 
 // Creates normal nasa daily image container with explanation and title
