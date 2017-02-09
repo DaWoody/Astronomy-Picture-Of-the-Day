@@ -1,8 +1,8 @@
 /**
- * NASA Wordpress Plugin
+ * NASA APOD - javascript class
  * Author: Johan DaWoody Wedfelt
  * GitHub: https://github.com/DaWoody
- *
+ * About: A small javascript class written to exchange information with the NASA open API and specifically to fetch information from the APOD project
  * @constructor
  */
 
@@ -180,7 +180,7 @@ NasaClass.prototype.loadData = function(){
 };
 
 NasaClass.prototype.initiate = function(apiKey){
-    console.log('=== Hello Houston.. NASA plugin initiated ===');
+    console.log('=== Hello Houston.. NASA APOD plugin initiated ===');
     this.setNasaApiKey(apiKey);
     this.setNasaApiUrl();
     this.setNasaCookieNames();

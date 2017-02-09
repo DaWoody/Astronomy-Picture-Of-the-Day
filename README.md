@@ -1,5 +1,5 @@
 ![Nasa Image](https://www.nasa.gov/sites/default/files/images/nasaLogo-570x450.png)
-# NASA Daily Image
+# NASA APOD
 ***
 ## A Wordpress plugin fetching the Astronomy Picture Of the Day from NASA
 ***

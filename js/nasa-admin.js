@@ -1,5 +1,7 @@
 /**
- *
+ * NASA APOD - plugin
+ * Author: Johan DaWoody Wedfelt
+ * Author URI: https://github.com/DaWoody
  */
 jQuery(document).ready(function(){
     console.log('Admin interface loaded..');
