@@ -6,7 +6,8 @@
 *   Version: 1.0.0
 *   Author: Johan "DaWoody" Wedfelt
 *   Copyright: Johan Wedfelt
-*   License: GPLv3
+*   License: GPLv2
+*   License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 *   Author URI: https://github.com/DaWoody
 */
 

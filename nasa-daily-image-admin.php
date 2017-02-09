@@ -36,7 +36,7 @@ function nasa_daily_image_create_plugin_admin_page() {
      <li>Plugin URI: <a href="https://github.com/DaWoody/nasa-daily-image">https://github.com/DaWoody/nasa-daily-image</a></li>
      <li>Version: 1.0.0</li>
      <li>Author: <a href="https://github.com/DaWoody">Johan DaWoody Wedfelt</a></li>
-     <li>License: <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a></li>
+     <li>License: <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GPLv2</a></li>
      <li>Dependencies: jQuery 1.X (supplied in Wordpress)</li>
      </ul>
      <div class="nasa-daily-image-admin-text-container">
