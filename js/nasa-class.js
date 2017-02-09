@@ -1,5 +1,6 @@
 /**
  * NASA APOD - javascript class
+ * Plugin URI: https://github.com/DaWoody/nasa-daily-image
  * Author: Johan DaWoody Wedfelt
  * GitHub: https://github.com/DaWoody
  * About: A small javascript class written to exchange information with the NASA open API and specifically to fetch information from the APOD project

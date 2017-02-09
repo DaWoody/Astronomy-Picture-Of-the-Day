@@ -1,5 +1,6 @@
 /**
  * NASA APOD - plugin
+ * Plugin URI: https://github.com/DaWoody/nasa-daily-image
  * Author: Johan DaWoody Wedfelt
  * Author URI: https://github.com/DaWoody
  * About: Small jQuery script to make DOM rendering on the post/page for the high definition image resolution
