@@ -11,19 +11,19 @@
 *   Author URI: https://github.com/DaWoody
 */
 
-require_once(dirname(__FILE__) . '/nasa-daily-image-global-vars.php');
-require_once(dirname(__FILE__) . '/nasa-daily-image-admin.php');
-require_once(dirname(__FILE__) . '/nasa-daily-image-shortcodes.php');
+require_once(dirname(__FILE__) . '/nasa-apod-global-vars.php');
+require_once(dirname(__FILE__) . '/nasa-apod-admin.php');
+require_once(dirname(__FILE__) . '/nasa-apod-shortcodes.php');
 
 //Require this for the wp-upgrade option
 require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 
 //Enqueueing for admin interface
-function nasa_daily_image_admin_enqueue($hook) {
+function nasa_apod_admin_enqueue($hook) {
 
-    global $nasa_daily_image_plugin_full_name;
+    global $nasa_apod_plugin_full_name;
 
-    if ( 'toplevel_page_' . $nasa_daily_image_plugin_full_name != $hook ) {
+    if ( 'toplevel_page_' . $nasa_apod_plugin_full_name != $hook ) {
         return;
     }
 
@@ -38,17 +38,17 @@ function nasa_daily_image_admin_enqueue($hook) {
     wp_enqueue_script('nasa-class-script');
     wp_enqueue_script('nasa-admin-script');
 
-    //wp_localize_script('nasa-class-script', 'nasaDailyImageAjax', array(
+    //wp_localize_script('nasa-class-script', 'nasaApodImageAjax', array(
     //'ajaxurl' => admin_url( 'admin-ajax.php' ),
     // generate a nonce with a unique ID "myajax-post-comment-nonce"
     // so that you can check it later when an AJAX request is sent
-    //'weelteDailyImageNonce' => wp_create_nonce( 'nasa-daily-image-nonce' )
+    //'nasaApodImageNonce' => wp_create_nonce( 'nasa-apod-nonce' )
     // ));
 }
 
 //Add actions for admin menues
-add_action( 'admin_menu', 'nasa_daily_image_create_plugin_menu' );
+add_action( 'admin_menu', 'nasa_apod_create_plugin_menu' );
 //add_action( 'admin_menu', 'gowp_admin_menu' );
-add_action( 'admin_enqueue_scripts', 'nasa_daily_image_admin_enqueue' );
+add_action( 'admin_enqueue_scripts', 'nasa_apod_admin_enqueue' );
 
 ?>

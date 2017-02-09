@@ -1,14 +1,14 @@
 /**
-* Small css file to structure the layout of the admin interface in the NASA Daily Image plugin
+* Small css file to structure the layout of the admin interface in the NASA APOD plugin
 * Plugin URI: https://github.com/DaWoody/nasa-apod
 * Author: Johan DaWoody Wedfelt
 * Author URI: https://github.com/DaWoody
  */
-.nasa-daily-image-reset-stored-data {
+.nasa-apod-reset-stored-data {
 margin-top:0.6em;
 }
 
-.nasa-daily-image-logo {
+.nasa-apod-logo {
   margin:1.4em;
   display:block;
   float:left;
@@ -16,11 +16,11 @@ margin-top:0.6em;
   height:auto;
 }
 
-.nasa-daily-image-gplv3 {
+.nasa-apod-gpl {
   margin-top:0.3em;
 }
 
-.nasa-daily-image-admin-text-container {
+.nasa-apod-admin-text-container {
   padding-top:0.2em;
   display: block;
   clear:both;
