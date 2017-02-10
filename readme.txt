@@ -3,6 +3,7 @@ Contributors: Johan "DaWoody" Wedfelt
 Tags: nasa, daily, image, apod, the, astronomy, picture, day, space, dawoody, johan, wedfelt
 Requires at least: 3.5.0, also including jquery within WP for some minor DOM manipulation working with WP.
 Tested up to: 4.7.2
+Stable tag: 4.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,3 +26,12 @@ Within the admin interface the specific ```css``` classes that gets added are me
 3. Use the Settings->Astronomy Picture Of the Day screen to configure the plugin
 4. The plugin basically lets you use the short-codes ```the-apod``` or ```the-apod-hd``` to get a ```div``` container with an image element, a header with the corresponding title and a paragraph with the explanation to the APOD.
 5. In the admin interface page, there is a button that clears the browser cache from previously stored THE APOD data.
+
+== Screenshots ==
+
+1. This shows the admin interface of the plugin.
+
+== Changelog ==
+
+= 1.0.0 =
+* Initial release
