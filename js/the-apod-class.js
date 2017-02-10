@@ -1,18 +1,18 @@
 /**
- * NASA APOD - javascript class
- * Plugin URI: https://github.com/DaWoody/nasa-apod
+ * THE APOD - javascript class
+ * Plugin URI: https://github.com/DaWoody/the-apod
  * Author: Johan DaWoody Wedfelt
  * Author URI: https://github.com/DaWoody
  * About: A small javascript class written to exchange information with the NASA open API and specifically to fetch information from the APOD project
  * @constructor
  */
 
-var NasaClass = function(){
+var ApodClass = function(){
     this.data = {};
     this.initiate();
 };
 
-NasaClass.prototype.getImageDataFromNasa = function(){
+ApodClass.prototype.getImageDataFromNasa = function(){
 
     var xhr = new XMLHttpRequest(),
         _that = this,
@@ -32,7 +32,7 @@ NasaClass.prototype.getImageDataFromNasa = function(){
     xhr.send();
 };
 
-NasaClass.prototype.setNasaCookieNames = function(){
+ApodClass.prototype.setNasaCookieNames = function(){
     //Just sets the NASA cookie names
     this.data.nasaCookieNames = {
         dateName: 'wp_plugin_nasa_image_date',
@@ -55,7 +55,7 @@ NasaClass.prototype.setNasaCookieNames = function(){
     };
 };
 
-NasaClass.prototype.loadNasaDataFromCookies = function(){
+ApodClass.prototype.loadNasaDataFromCookies = function(){
 
     //Lets load all the values into our class from the saved cookies
     this.data.nasaCookieValues.dateName = this.getCookie(this.data.nasaCookieNames.dateName);
@@ -67,7 +67,7 @@ NasaClass.prototype.loadNasaDataFromCookies = function(){
     this.data.nasaCookieValues.url = this.getCookie(this.data.nasaCookieNames.url);
 };
 
-NasaClass.prototype.checkNasaCookies = function(){
+ApodClass.prototype.checkNasaCookies = function(){
     var cookiesSet = false;
 
     //We are checking to see if we already have stored the data in cookies.
@@ -79,7 +79,7 @@ NasaClass.prototype.checkNasaCookies = function(){
     return cookiesSet;
 };
 
-NasaClass.prototype.setRetrievedNasaCookie = function(dataObject){
+ApodClass.prototype.setRetrievedNasaCookie = function(dataObject){
     //Taking in the dataobject reciever from the API
     //Taking it from the version 1 thing.
 
@@ -108,14 +108,14 @@ NasaClass.prototype.setRetrievedNasaCookie = function(dataObject){
 };
 
 
-NasaClass.prototype.setCookie = function(cname, cvalue, exdays) {
+ApodClass.prototype.setCookie = function(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     var expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 };
 
-NasaClass.prototype.getCookie = function(cname) {
+ApodClass.prototype.getCookie = function(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
     for(var i = 0; i < ca.length; i++) {
@@ -130,7 +130,7 @@ NasaClass.prototype.getCookie = function(cname) {
     return "";
 };
 
-NasaClass.prototype.checkCookie = function(cookieName) {
+ApodClass.prototype.checkCookie = function(cookieName) {
 
     var cookieSet = false,
         value = this.getCookie(cookieName);
@@ -141,34 +141,34 @@ NasaClass.prototype.checkCookie = function(cookieName) {
     return cookieSet;
 };
 
-NasaClass.prototype.printStoredNasaData = function(){
+ApodClass.prototype.printStoredNasaData = function(){
     console.log('== Cookie values ==');
     console.log(this.data.nasaCookieValues);
 };
 
-NasaClass.prototype.setNasaApiKey = function(apiKey){
+ApodClass.prototype.setNasaApiKey = function(apiKey){
     var nasaApiKey = apiKey || 'DEMO_KEY';
     this.data.nasaApiKey = nasaApiKey;
 };
 
-NasaClass.prototype.setNasaApiUrl = function(apiUrl){
+ApodClass.prototype.setNasaApiUrl = function(apiUrl){
     var nasaApiUrl = apiUrl || 'https://api.nasa.gov/planetary/apod?api_key=';
     this.data.nasaApiUrl =  nasaApiUrl;
 };
 
 
-NasaClass.prototype.resetStoredData = function(){
+ApodClass.prototype.resetStoredData = function(){
     var cookieNames = this.data.nasaCookieNames;
     for(var key in cookieNames){
         this.setCookie(cookieNames[key], '', 1);
     }
 };
 
-NasaClass.prototype.returnStoredNasaValues = function(){
+ApodClass.prototype.returnStoredNasaValues = function(){
   return this.data.nasaCookieValues;
 };
 
-NasaClass.prototype.loadData = function(){
+ApodClass.prototype.loadData = function(){
     if(!this.checkNasaCookies()){
         //console.log('Fetching the data from API');
         this.getImageDataFromNasa();
@@ -177,10 +177,10 @@ NasaClass.prototype.loadData = function(){
         this.loadNasaDataFromCookies();
         console.log('Data loaded from storage..');
     }
-    //this.printStoredNasaData();
+    this.printStoredNasaData();
 };
 
-NasaClass.prototype.initiate = function(apiKey){
+ApodClass.prototype.initiate = function(apiKey){
     console.log('=== Hello Houston.. NASA APOD plugin initiated ===');
     this.setNasaApiKey(apiKey);
     this.setNasaApiUrl();

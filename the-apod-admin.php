@@ -1,14 +1,14 @@
 <?php
 /**
-*  Part of the NASA APOD plugin.
+*  Part of the THE APOD plugin.
 *  This part is creating the admin interface, both menu item and the actual admin page
 */
 
-function nasa_apod_create_plugin_menu() {
-	add_menu_page( 'NASA APOD', 'NASA APOD', 'manage_options', 'NASA APOD', 'nasa_apod_create_plugin_admin_page' );
+function the_apod_create_plugin_menu() {
+	add_menu_page( 'THE APOD', 'THE APOD', 'manage_options', 'THE APOD', 'the_apod_create_plugin_admin_page' );
 }
 
-function nasa_apod_create_plugin_admin_page() {
+function the_apod_create_plugin_admin_page() {
 
     //global $nasa_apod_db_version;
 
@@ -16,24 +16,24 @@ function nasa_apod_create_plugin_admin_page() {
 		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
 	}
 
-	wp_register_style('nasa-apod-style', plugin_dir_url( __FILE__ ) . 'css/nasa-apod-admin-interface.css', false, 1.0);
-	wp_enqueue_style('nasa-apod-style');
+	wp_register_style('the-apod-style', plugin_dir_url( __FILE__ ) . 'css/the-apod-admin-interface.css', false, 1.0);
+	wp_enqueue_style('the-apod-style');
 
 	?>
-	<div class="nasa-apod-admin-wrapper">
+	<div class="the-apod-admin-wrapper">
 	<?php
-	echo '<img class="nasa-apod-logo" alt="Nasa APOD" src="' . plugins_url( 'images/nasa_apod_logo.png', __FILE__ ) . '" >';
-	echo '<img class="nasa-apod-gpl" alt="GPL" src="' . plugins_url( 'images/gpl.png', __FILE__ ) . '" >';
+	echo '<img class="the-apod-logo" alt="THE APOD" src="' . plugins_url( 'images/the_apod_logo.png', __FILE__ ) . '" >';
+	echo '<img class="the-apod-gpl" alt="GPL" src="' . plugins_url( 'images/gpl.png', __FILE__ ) . '" >';
 	?>
 
-	<div class="nasa-apod-admin-button-wrapper">
-	<button class="nasa-apod-reset-stored-data btn btn-info">Reset Stored Data</button>
+	<div class="the-apod-admin-button-wrapper">
+	<button class="the-apod-reset-stored-data btn btn-info">Reset Stored Data</button>
 	</div>
 
-	<div class="nasa-apod-admin-text">
+	<div class="the-apod-admin-text">
      <ul>
-     <li><h3>NASA APOD</h3></li>
-     <li>Plugin URI: <a href="https://github.com/DaWoody/nasa-apod">https://github.com/DaWoody/nasa-apod</a></li>
+     <li><h3>THE APOD</h3></li>
+     <li>Plugin URI: <a href="https://github.com/DaWoody/nasa-apod">https://github.com/DaWoody/the-apod</a></li>
      <li>Version: 1.0.0</li>
      <li>Author: <a href="https://github.com/DaWoody">Johan DaWoody Wedfelt</a></li>
      <li>License: <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GPLv2</a></li>
@@ -51,16 +51,16 @@ function nasa_apod_create_plugin_admin_page() {
 	 The plugin can be used by adding short-codes to your posts, pages etc.
 	 There are currently two different short-codes that can be used either for fetching a <code>normal resolution</code> image or
 	 one for fetching a <code>high-definition</code> image.
-	 The structure that is returned in html is a div acting as a container with the class <b>nasa-apod-container</b> containing a
-	 <code>h3</code> tag including the title with the class <b>nasa-apod-title</b> , an <code>img</code> tag with the class <b>nasa-apod-picture</b> and a  <code>p</code> tag with the class  <b>nasa-apod-explanation</b> containing
+	 The structure that is returned in html is a div acting as a container with the class <b>the-apod-container</b> containing a
+	 <code>h3</code> tag including the title with the class <b>the-apod-title</b> , an <code>img</code> tag with the class <b>the-apod-picture</b> and a  <code>p</code> tag with the class  <b>the-apod-explanation</b> containing
 	 the explanation.
 
 
      <br>
      <br>
 <h4> Select <code>text</code> mode within the editor in your posts/pages </h4>
-	 By adding the short-code <code>[nasa-apod]</code> you get this structure with the image tag containing a reference to the normal resolution version,
-	 and by instead adding the short-code <code>[nasa-apod-hd]</code> you get the high-definition version.
+	 By adding the short-code <code>[the-apod]</code> you get this structure with the image tag containing a reference to the normal resolution version,
+	 and by instead adding the short-code <code>[the-apod-hd]</code> you get the high-definition version.
 	</div>
     </div>
 
