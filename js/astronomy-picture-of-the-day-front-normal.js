@@ -9,8 +9,8 @@ jQuery(document).ready(function() {
     var nasaClass = new ApodClass(),
         nasaObject = nasaClass.returnStoredNasaValues();
 
-    jQuery('.the-apod-container')
-        .html('<h2 class="the-apod-title">' + nasaObject.title + '</h2>'
-            + '<img class="the-apod-picture" src="' + nasaObject.url + '" alt="the-apod">'
-            + '<p class="the-apod-explanation">' + nasaObject.explanation + '</p>');
+    jQuery('.astronomy-picture-of-the-day-container')
+        .html('<h2 class="astronomy-picture-of-the-day-title">' + nasaObject.title + '</h2>'
+            + '<img class="astronomy-picture-of-the-day-picture" src="' + nasaObject.url + '" alt="astronomy-picture-of-the-day">'
+            + '<p class="astronomy-picture-of-the-day-explanation">' + nasaObject.explanation + '</p>');
 });

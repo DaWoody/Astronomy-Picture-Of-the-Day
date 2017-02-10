@@ -25,7 +25,7 @@ Within the admin interface the specific ```css``` classes that gets added are me
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Use the Settings->Astronomy Picture Of the Day screen to configure the plugin
 4. The plugin basically lets you use the short-codes ```apod``` or ```apod-hd``` to get a ```div``` container with an image element, a header with the corresponding title and a paragraph with the explanation to the APOD.
-5. In the admin interface page, there is a button that clears the browser cache from previously stored THE APOD data.
+5. In the admin interface page, there is a button that clears the browser cache from previously stored  data.
 
 == Screenshots ==
 

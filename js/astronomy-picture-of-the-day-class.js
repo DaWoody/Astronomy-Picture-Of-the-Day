@@ -181,7 +181,7 @@ ApodClass.prototype.loadData = function(){
 };
 
 ApodClass.prototype.initiate = function(apiKey){
-    console.log('=== Hello Houston.. NASA APOD plugin initiated ===');
+    console.log('=== Hello Houston.. Astronomy Picture Of the Day plugin initiated ===');
     this.setNasaApiKey(apiKey);
     this.setNasaApiUrl();
     this.setNasaCookieNames();
