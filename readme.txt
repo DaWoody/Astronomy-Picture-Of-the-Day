@@ -15,7 +15,7 @@ The Astronomy Picture Of the Day plugin fetches data from the NASA open API and 
 Currently the plugin uses the public ```DEMO_KEY``` for requests towards the open API, and as mentioned then stores the data as cookies for the next 24 hours, this to lessen the request load on the API and also possibly help the wordpress user to a smoother experience.
 
 How to use:
-After activating the plugin, go to your post/page, go to editor mode, and then either add ```[apod]``` or ```[apod-hd]``` to generate a html block consisting of a container div, with a title, the apod image and its explanation.
+After activating the plugin, go to your post/page, go to editor mode, and then either add ```[astronomy-picture-of-the-day]``` or ```[astronomy-picture-of-the-day-hd]``` to generate a html block consisting of a container div, with a title, the apod image and its explanation.
 All elements receive css classes so they can be styled independently by the Wordpress developer.
 Within the admin interface the specific ```css``` classes that gets added are mentioned.
 
