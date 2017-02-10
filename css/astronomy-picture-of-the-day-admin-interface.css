@@ -1,0 +1,27 @@
+/**
+* Small css file to structure the layout of the admin interface in the Astronomy Picture Of the Day plugin
+* Plugin URI: https://github.com/DaWoody/astronomy-picture-of-the-day
+* Author: Johan DaWoody Wedfelt
+* Author URI: https://github.com/DaWoody
+ */
+.astronomy-picture-of-the-day-reset-stored-data {
+margin-top:0.6em;
+}
+
+.astronomy-picture-of-the-day-logo {
+  margin:1.4em;
+  display:block;
+  float:left;
+  width:290px;
+  height:auto;
+}
+
+.astronomy-picture-of-the-day-gpl {
+  margin-top:0.3em;
+}
+
+.astronomy-picture-of-the-day-admin-text-container {
+  padding-top:0.2em;
+  display: block;
+  clear:both;
+}

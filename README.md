@@ -1,7 +1,7 @@
 ![Nasa Image](https://www.nasa.gov/sites/default/files/images/nasaLogo-570x450.png)
-# THE APOD
+# Astronomy Picture Of the Day
 ***
-## A Wordpress plugin fetching the Astronomy Picture Of the Day from NASA
+## A Wordpress plugin fetching the Astronomy Picture Of the Day (APOD) from NASA
 ***
 ### Version
 

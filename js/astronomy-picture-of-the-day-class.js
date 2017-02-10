@@ -1,6 +1,6 @@
 /**
- * THE APOD - javascript class
- * Plugin URI: https://github.com/DaWoody/the-apod
+ * Astronomy Picture Of the Day - javascript class
+ * Plugin URI: https://github.com/DaWoody/astronomy-picture-of-the-day
  * Author: Johan DaWoody Wedfelt
  * Author URI: https://github.com/DaWoody
  * About: A small javascript class written to exchange information with the NASA open API and specifically to fetch information from the APOD project

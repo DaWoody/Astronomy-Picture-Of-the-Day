@@ -1,6 +1,6 @@
 /**
- * THE APOD - plugin
- * Plugin URI: https://github.com/DaWoody/the-apod
+ * Astronomy Picture Of the Day - plugin
+ * Plugin URI: https://github.com/DaWoody/astronomy-picture-of-the-day
  * Author: Johan DaWoody Wedfelt
  * Author URI: https://github.com/DaWoody
  */
