@@ -6,14 +6,13 @@
  */
 jQuery(document).ready(function(){
     console.log('Admin interface loaded..');
-    var apodClass = new ApodClass();
-
-    var object = apodClass.getImageDataFromNasa();
+    var apodClass = new ApodClass(),
+        object = apodClass.getImageDataFromNasa();
 
     console.log(object);
-    jQuery('.the-apod-reset-stored-data').click(function(){
+    jQuery('.astronomy-picture-of-the-day-reset-stored-data').click(function(){
        //Delete current data first then store new one.
         apodClass.resetStoredData();
-        alert('THE APOD data reset');
+        alert('Astronomy Picture Of the Day data reset');
     });
 });
