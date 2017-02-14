@@ -21,17 +21,20 @@ Within the admin interface the specific ```css``` classes that gets added are me
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/apod` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/astronomy-picture-of-the-day` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Use the Settings->Astronomy Picture Of the Day screen to configure the plugin
-4. The plugin basically lets you use the short-codes ```apod``` or ```apod-hd``` to get a ```div``` container with an image element, a header with the corresponding title and a paragraph with the explanation to the APOD.
+4. The plugin basically lets you use the short-codes ```astronomy-picture-of-the-day``` or ```astronomy-picture-of-the-day-hd``` to get a ```div``` container with an image element, a header with the corresponding title and a paragraph with the explanation to the APOD.
 5. In the admin interface page, there is a button that clears the browser cache from previously stored  data.
 
 == Screenshots ==
 
 1. This shows the admin interface of the plugin.
+2. This shows an example of how to add the shortcode that will generate the html block, in the text-editor mode. In this screenshot a page is modified.
 
 == Changelog ==
 
+= 1.0.1 =
+* Minor adjustments with readme.txt, images added to assets dir so plugin will show images on Wordpress.org
 = 1.0.0 =
 * Initial release

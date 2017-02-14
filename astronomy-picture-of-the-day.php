@@ -3,7 +3,7 @@
 *   Plugin Name: Astronomy Picture Of the Day
 *   Plugin URI: https://github.com/DaWoody/nasa-apod
 *   Description: Astronomy Picture Of the Day. A plugin that fetches information from the NASA open API, gathering information with the Astronomy Picture Of the Day (APOD). This information can then be added as a html block to a wordpress page/post etc.
-*   Version: 1.0.0
+*   Version: 1.0.1
 *   Author: Johan "DaWoody" Wedfelt
 *   Copyright: Johan Wedfelt
 *   License: GPLv2
@@ -32,8 +32,8 @@ function astronomy_picture_of_the_day_admin_enqueue($hook) {
 
     wp_enqueue_style('bootstrap-style');
 
-    wp_register_script('astronomy-picture-of-the-day-class-script', plugin_dir_url( __FILE__ ) . 'js/astronomy-picture-of-the-day-class.js', ['jquery'], 1.0);
-    wp_register_script('astronomy-picture-of-the-day-admin-script', plugin_dir_url( __FILE__ ) . 'js/astronomy-picture-of-the-day-admin.js', ['astronomy-picture-of-the-day-class-script'], 1.0);
+    wp_register_script('astronomy-picture-of-the-day-class-script', plugin_dir_url( __FILE__ ) . '/js/astronomy-picture-of-the-day-class.js', ['jquery'], 1.0);
+    wp_register_script('astronomy-picture-of-the-day-admin-script', plugin_dir_url( __FILE__ ) . '/js/astronomy-picture-of-the-day-admin.js', ['astronomy-picture-of-the-day-class-script'], 1.0);
 
     wp_enqueue_script('astronomy-picture-of-the-day-class-script');
     wp_enqueue_script('astronomy-picture-of-the-day-admin-script');

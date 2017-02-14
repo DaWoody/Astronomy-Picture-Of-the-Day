@@ -5,6 +5,8 @@
 ***
 ### Version
 
+1.0.1 - Minor fixes, adjusted ```readme.txt``` to have more correct instructions for Wordpress.org, adding plugin images, background images and icon images for [wordpress.org](wordpress.org).
+
 1.0.0 - First release, includes the options ```normal``` and ```high definition``` short-codes. 
 
 ### About
