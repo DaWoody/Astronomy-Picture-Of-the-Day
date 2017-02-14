@@ -3,6 +3,9 @@
 ***
 ## A Wordpress plugin fetching the Astronomy Picture Of the Day (APOD) from NASA
 ***
+
+This plugin is available on [Wordpress](https://wordpress.org/) @ [https://wordpress.org/plugins/astronomy-picture-of-the-day/](https://wordpress.org/plugins/astronomy-picture-of-the-day/).
+
 ### Version
 
 1.0.1 - Minor fixes, adjusted ```readme.txt``` to have more correct instructions for Wordpress.org, adding plugin images, background images and icon images for [wordpress.org](wordpress.org).
