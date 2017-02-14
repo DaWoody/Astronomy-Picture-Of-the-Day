@@ -1,5 +1,5 @@
 === Astronomy Picture Of the Day  ===
-Contributors: Johan "DaWoody" Wedfelt
+Contributors: DaWoody
 Tags: nasa, daily, image, apod, astronomy, picture, of, the, day, space, dawoody, johan, wedfelt
 Requires at least: 3.5.0, also including jquery within WP for some minor DOM manipulation working with WP.
 Tested up to: 4.7.2
