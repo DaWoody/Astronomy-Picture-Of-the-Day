@@ -1,4 +1,4 @@
-![Nasa Image](https://www.nasa.gov/sites/default/files/images/nasaLogo-570x450.png)
+![Astronomy Picture Of the Day](http://ps.w.org/astronomy-picture-of-the-day/assets/banner-772x250.png?rev=1595615)
 # Astronomy Picture Of the Day
 ***
 ## A Wordpress plugin fetching the Astronomy Picture Of the Day (APOD) from NASA
